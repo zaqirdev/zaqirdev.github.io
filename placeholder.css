@@ -1,0 +1,365 @@
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px; 
+}
+
+/*  About Page Slider  */
+
+
+.slide {
+  width: 100%;
+  height: 582px;
+  margin: 0px auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide ul {
+  margin: 0 auto;
+  height: 582px;
+}
+
+.slide ul li {
+  width: 100%;
+  list-style: none;
+  position: absolute;
+  z-index: 1;
+  height: 582px;
+  background-position: top center;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+/*  Fonts and Basic Styling */
+
+@font-face {
+    font-family: edelsans_ultralight;
+    src: url(edelsans_ultralight.otf);
+	src: local(edelsans_ultralight), url("edelsans_ultralight.otf");
+}
+
+@font-face {
+    font-family: edelsans_regular;
+    src: url(edelsans_regular.otf);
+	src: local(edelsans_regular), url("edelsans_regular.otf");
+}
+
+@font-face {
+  font-family: 'Manteka';
+  src: url("Manteka.ttf") format("truetype");
+  src: local(Manteka), url("Manteka.ttf");
+  font-weight: normal;
+  font-style: normal;
+  
+  }
+
+/* Scroll HEADER   -----------------------------------------------------------------------------------------------------------SCROLLING RESIZEABLE NAV */
+
+header {
+    width: 100vw;
+    height: 10vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+	right: 0;
+    z-index: 999;
+    background-image:none;
+	-moz-background-size: cover;
+-webkit-background-size: cover;
+background-size:cover; 
+  background-position:center center; 
+  background-repeat:no-repeat; 
+background-attachment: relative;
+    -webkit-transition: height 0.3s;
+    -moz-transition: height 0.3s;
+    -ms-transition: height 0.3s;
+    -o-transition: height 0.3s;
+    transition: height 0.3s;
+}
+
+ul#nav {
+   list-style-type: none;
+   display:inline;
+}
+li#nav {
+   float: right;
+   padding-right: 5em;
+   font-family: edelsans_ultralight;
+   font-size: 100%;
+   display:block;
+   color:#FFFFFF;
+   opacity: 0.85;
+}
+ 
+ 
+header h1#logo {
+    display: inline-block;
+    height: 0vh;
+    line-height: 10vh;
+    float: left;
+    font-family: "edelsans_ultralight", sans-serif;
+    font-size: 1vmax;
+    color: #828282;
+    font-weight: 400;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+	margin-top: 2em;
+}
+header nav {
+    display: inline-block;
+    float: right;
+	padding-right: 1em;
+}
+header nav a {
+    line-height: 10vh;
+	font-family: "edelsans_ultralight";
+    color: white;
+    font-weight: 700;
+    font-size: 1.5vmax;
+	padding-right: 0.5em;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+header nav a:hover {
+    color: white;
+}
+header.smaller {
+    height: 4vh;
+	background:rgba(0,0,0,0.8);
+	
+}
+header.smaller h1#logo {
+    width: 10vw;
+    height: 4vh;
+    line-height: 8vh;
+    font-size: 1.5vw;
+}
+header.smaller nav a {
+    top: 0;
+    line-height: 4vh;
+	font-weight: lighter;
+	font-size: 1.5vw;
+	color: #B2B2B2;
+
+}
+
+header.smaller nav a:hover {
+   color:#FFFFFF;
+   opacity: none;
+
+}
+
+@media all and (max-width: 60px) {
+    header h1#logo {
+        display: block;
+        float: none;
+        margin: 0 auto;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+    }
+    header nav {
+        display: block;
+        float: none;
+        height: 50px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    header nav a {
+        line-height: 50px;
+        margin: 0 10px;
+    }
+    header.smaller {
+        height: 75px;
+    }
+    header.smaller h1#logo {
+        height: 40px;
+        line-height: 40px;
+        font-size: 30px;
+    }
+    header.smaller nav {
+        height: 35px;
+    }
+    header.smaller nav a {
+        line-height: 35px;
+    }
+}
+
+
+/*  Landing Page */
+
+div#placeholding {
+width:100vw;
+height:85vh; 
+background-color: #222222;
+-moz-background-size: cover;
+-webkit-background-size: cover;
+background-size:cover; 
+  background-position:center center; 
+  background-repeat:no-repeat; 
+background-attachment: relative;
+}
+
+video#landing {
+position: center top;
+overflow: hidden; 
+width: 100vw;
+float: left;
+}
+
+div#title {
+
+color: white; 
+font-size: 4.5vw; 
+line-height: 8vmax;
+float: left; 
+position: absolute; 
+padding-left: 0.5em;
+font-family: 'edelsans_regular'; 
+opacity: 0.8; 
+padding-top: 12vh; 
+letter-spacing:0.7vw;
+}
+
+div#pattern {
+width: 100%;
+height: 100%;
+position: absolute;
+
+}
+
+.workheader {
+
+width: 100vw; 
+background-color: #222222;
+text-align: center;
+overflow: auto;
+}
+
+
+
+.WorkTitle {
+
+font-family: 'Manteka';
+font-size: 5vw;
+letter-spacing: 1vw;
+padding-top: 3vh;
+overflow: auto;
+color: white;
+opacity: 0.8;
+}
+.aboutheader {
+ 
+width: 100vw;
+min-height: 35vh;
+overflow: auto;
+background-color: #222222;
+text-align: center;
+}
+
+.HeaderTitle {
+
+font-family: 'Manteka';
+overflow: auto;
+letter-spacing: 1vw;
+font-size: 5em;
+padding-top: 3vh;
+color: white;
+opacity: 0.8;
+
+}
+
+.HeaderSub1 {
+
+font-family: 'edelsans_regular';
+text-align: center;
+letter-spacing: 0.3em;
+font-size: 2vw;
+float: left;
+padding-left: 15vw;
+color: white;
+opacity: 0.8;
+
+}
+
+.HeaderSub2 {
+
+font-family: 'edelsans_regular';
+letter-spacing: 0.3em;
+font-size: 2vw;
+float: right;
+color: white;
+opacity: 0.8;
+
+}
+
+.HeaderSub3 {
+
+font-family: 'edelsans_ultralight';
+letter-spacing: 0.2em;
+font-size: 2vw;
+float: left;
+display: block;
+padding-top: 10vh;
+color: white;
+opacity: 0.8;
+
+}
+
+.HeaderSub4 {
+
+font-family: 'edelsans_ultralight';
+letter-spacing: 0.2em;
+font-size: 2vw;
+float: right;
+color: white;
+opacity: 0.8;
+
+}
+
+div#about_gallery {
+
+width: 100vw;
+}
+
+div#writeup {
+z-index: 30000;
+}
+
+
+
+h1 {
+    font-family: edelsans_ultralight;
+    margin-right: 0; 
+	float: right;
+	font-size: 180%; 
+	padding-top:60vh;
+	padding-right: 2vw;
+}
+
+#work1:hover {
+
+opacity: 0;
+}
+
+#work2:hover {
+
+opacity: 0;
+}
+
+#work3:hover {
+
+opacity: 0;
+}
+
