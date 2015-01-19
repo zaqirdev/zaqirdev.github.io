@@ -1,1 +1,0 @@
-# zaqirdev.github.io
