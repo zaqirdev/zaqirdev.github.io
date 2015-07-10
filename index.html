@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Zaqir Virani Session &amp; Creative</title>
+    <meta content=
+    "The digital portfolio of Zaqir Virani - creative consultant, author, and session musician."
+    name="description">
+	<!--  Facebook Opengraph Meta Tags  -->
+    <meta content="website">
+    <meta content="images/opengraph_snip.png">
+    <meta content="http://www.zaqirvirani.com">
+    <!--  Twitter Card Meta Tags   -->
+    <meta content="" name="twitter:card">
+    <meta content="" name="twitter:url">
+    <meta content="" name="twitter:title">
+    <meta content="" name="twitter:description">
+    <meta content="" name="twitter:image">
+    <link href="test.css" rel="stylesheet" type="text/css">
+	<link rel="shortcut icon" href="favicon.ico">
+    <style type="text/css"></style>
+    <script src='js/scroll.js'></script>
+    <script src="js/classie.js"></script>
+    <script>
+function init() {
+        window.addEventListener('scroll', function(e){
+            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                shrinkOn = 300,
+                header = document.querySelector("header");
+            if (distanceY > shrinkOn) {
+                classie.add(header,"smaller");
+            } else {
+                if (classie.has(header,"smaller")) {
+                    classie.remove(header,"smaller");
+                }
+            }
+        });
+    }
+    window.onload = init();
+    </script>
+    <script>
+    jQuery(document).ready(function($) {
+
+            $(".scroll").click(function(event) {
+                event.preventDefault();
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 1400);
+            });
+        });
+    </script>
+	    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<link rel="stylesheet" type="text/css" href="css/elastic_grid.min.css" />
+</head>
+
+<body class="no-touch">
+    <!--<header>
+        <div class="container clearfix">
+            <h1 id="logo"></h1>
+
+            <nav>
+                <ul id="nav">
+                    <li id="nav">
+                        <a class="scroll" href="#placeholding">Home</a>
+                    </li>
+
+                    <li id="nav">
+                        <a href="folio.html">Portfolio</a>
+                    </li>
+
+                    <li id="nav">
+                        <a class="scroll" href="#about">About</a>
+                    </li>
+
+                    <li id="nav">
+                        <a class="scroll" href="#footer">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>-->
+
+    <div id="placeholding">
+        <h1>Zaqir Virani</h1><br>
+
+        <!--<h2>Session &amp; Creative Services</h2>-->
+
+        <div id="buttonrow">
+            <a href="http://twitter.com/zaqirvirani"><img class=
+            "landingbuttons" src="images/twitter.png"></a> <a href=
+            "http://instagram.com/zaqirvirani"><img class="landingbuttons" src=
+            "images/instagram.png"> <a href=
+            "http://twitter.com/zaqirvirani"><img class="landingbuttons" src=
+            "images/linkedin.png"> <a href=
+            "http://twitter.com/zaqirvirani"><img class="landingbuttons" src=
+            "images/soundcloud.png"></a></a></a>
+        </div>
+    </div>
+
+    <div id="navbar">
+        <p>words, music, and code.</p><a class="scroll" href=
+        "#space"><img src="images/downarrow.png" style=
+        "height: 6vw; padding-top: 1vw;"></a>
+    </div>
+	<div id="space" style="height: 100px; width: 100%; color: #ffffff;"></div>
+<div id="elastic_grid_demo"></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="js/modernizr.custom.js"></script>
+<script src="js/classie.js"></script>
+<!--- uncompress-->
+<!-- <script type="text/javascript" src="js/jquery.elastislide.js"></script>
+<script type="text/javascript" src="js/jquery.hoverdir.js"></script>
+<script type="text/javascript" src="js/elastic_grid.js"></script> -->
+
+<!-- compress version-->
+<script type="text/javascript" src="js/elastic_grid.min.js"></script>
+
+<script type="text/javascript">
+    $(function(){
+        $("#elastic_grid_demo").elastic_grid({
+            'showAllText' : 'All',
+            'filterEffect': 'popup', // moveup, scaleup, fallperspective, fly, flip, helix , popup
+            'hoverDirection': true,
+            'hoverDelay': 0,
+            'hoverInverse': false,
+            'expandingSpeed': 800,
+            'expandingHeight': 400,
+            'items' :
+            [
+                {
+                    'title'         : 'Resonator Magazine',
+                    'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
+					<!-- the first thumbnail shows in the gallery, the next four also run as a slider in the expanded view -->
+                    'thumbnail'     : ['images/small/resonator.jpg', 'images/small/2.jpg', 'images/small/3.jpg', 'images/small/10.jpg', 'images/small/11.jpg'],
+                    'large'         : ['images/large/1.jpg', 'images/large/2.jpg', 'images/large/3.jpg', 'images/large/10.jpg', 'images/large/11.jpg'],
+                    'button_list'   :
+                    [
+                        { 'title':'Visit', 'url' : 'http://resonatormagazine.com/', 'new_window' : true },
+                        { 'title':'Download', 'url':'http://porfolio.bonchen.net/', 'new_window' : false}
+                    ],
+                    'tags'          : ['Web Design']
+                },
+                {
+                    'title'         : 'Resonator Internal Documentation',
+                    'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
+                    'thumbnail'     : ['images/small/resonator_faq.jpg', 'images/small/5.jpg', 'images/small/6.jpg', 'images/small/7.jpg'],
+                    'large'         : ['images/large/4.jpg', 'images/large/5.jpg', 'images/large/6.jpg', 'images/large/7.jpg'],
+                    'button_list'   :
+                    [
+                        { 'title':'Demo', 'url' : 'http://porfolio.bonchen.net/', 'new_window' : true },
+                        { 'title':'Download', 'url':'http://porfolio.bonchen.net/', 'new_window' : true}
+                    ],
+                    'tags'          : ['Web Design', 'Documentation']
+                },
+                {
+                    'title'         : 'Kits for Cultural History:<br/>Electric Jewels',
+                    'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
+                    'thumbnail'     : ['images/small/jewels.jpg','images/small/8.jpg', 'images/small/9.jpg', 'images/small/10.jpg'],
+                    'large'         : ['images/large/15.jpg','images/large/8.jpg', 'images/large/9.jpg', 'images/large/10.jpg'],
+                    'button_list'   :
+                    [
+                        { 'title':'Demo', 'url' : 'http://porfolio.bonchen.net/', 'new_window' : true },
+                        { 'title':'Download', 'url':'http://porfolio.bonchen.net/', 'new_window' : true}
+                    ],
+                    'tags'          : ['Research', 'Material Design']
+                },
+                {
+                    'title'         : 'Kits for Cultural History:<br/>The Wire Recorder Kit',
+                    'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
+                    'thumbnail'     : ['images/small/ferrite.jpg', 'images/small/13.jpg', 'images/small/14.jpg', 'images/small/15.jpg', 'images/small/16.jpg'],
+                    'large'         : ['images/large/12.jpg', 'images/large/13.jpg', 'images/large/14.jpg', 'images/large/15.jpg', 'images/large/16.jpg'],
+                    'button_list'   :
+                    [
+                        { 'title':'Demo', 'url' : 'http://porfolio.bonchen.net/', 'new_window' : true },
+                        { 'title':'Download', 'url':'http://porfolio.bonchen.net/', 'new_window' : true}
+                    ],
+                    'tags'          : ['Research', 'Material Design']
+                },
+                {
+                    'title'         : '"Cultural or Technological Determinism?"',
+                    'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
+                    'thumbnail'     : ['images/small/kits.jpg', 'images/small/18.jpg', 'images/small/19.jpg', 'images/small/20.jpg'],
+                    'large'         : ['images/large/17.jpg', 'images/large/18.jpg', 'images/large/19.jpg', 'images/large/20.jpg'],
+                    'button_list'   :
+                    [
+                        { 'title':'Demo', 'url' : 'http://maker.uvic.ca/determinism/', 'new_window' : true },
+                        { 'title':'Download', 'url':'http://porfolio.bonchen.net/', 'new_window' : true}
+                    ],
+                    'tags'          : ['Publications', 'Material Design']
+                },
+                {
+                    'title'         : 'Myths on Maps',
+                    'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
+                    'thumbnail'     : ['images/small/myths.jpg','images/small/15.jpg', 'images/small/11.jpg', 'images/small/10.jpg'],
+                    'large'         : ['images/large/13.jpg','images/large/15.jpg', 'images/large/11.jpg', 'images/large/10.jpg'],
+                    'button_list'   :
+                    [
+                        { 'title':'Demo', 'url' : 'http://porfolio.bonchen.net/', 'new_window' : true },
+                        { 'title':'Download', 'url':'http://porfolio.bonchen.net/', 'new_window' : true}
+                    ],
+                    'tags'          : ['Web Design', 'Research', 'Publications']
+                },
+                {
+                    'title'         : '"From the Ground Up"',
+                    'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
+                    'thumbnail'     : ['images/small/ground.jpg','images/small/8.jpg', 'images/small/9.jpg', 'images/small/10.jpg'],
+                    'large'         : ['images/large/7.jpg','images/large/8.jpg', 'images/large/9.jpg', 'images/large/10.jpg'],
+                    'button_list'   :
+                    [
+                        { 'title':'Demo', 'url' : 'http://porfolio.bonchen.net/', 'new_window' : true },
+                        { 'title':'Download', 'url':'http://porfolio.bonchen.net/', 'new_window' : true}
+                    ],
+                    'tags'          : ['Compositions']
+                },
+                {
+                    'title'         : 'TAG Cover Page',
+                    'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
+                    'thumbnail'     : ['images/small/troy.jpg', 'images/small/13.jpg', 'images/small/14.jpg', 'images/small/15.jpg', 'images/small/16.jpg'],
+                    'large'         : ['images/large/16.jpg', 'images/large/13.jpg', 'images/large/14.jpg', 'images/large/15.jpg', 'images/large/16.jpg'],
+                    'button_list'   :
+                    [
+                        { 'title':'Demo', 'url' : 'http://porfolio.bonchen.net/', 'new_window' : true },
+                        { 'title':'Download', 'url':'http://porfolio.bonchen.net/', 'new_window' : true}
+                    ],
+                    'tags'          : ['Web Design']
+                },
+                {
+                    'title'         : 'Routledge Encyclopedia of Modernism',
+                    'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
+                    'thumbnail'     : ['images/small/rem.jpg', 'images/small/18.jpg', 'images/small/19.jpg', 'images/small/20.jpg'],
+                    'large'         : ['images/large/18.jpg', 'images/large/18.jpg', 'images/large/19.jpg', 'images/large/20.jpg'],
+                    'button_list'   :
+                    [
+                        { 'title':'Demo', 'url' : 'http://porfolio.bonchen.net/', 'new_window' : true },
+                        { 'title':'Download', 'url':'http://porfolio.bonchen.net/', 'new_window' : true}
+                    ],
+                    'tags'          : ['Publications',]
+                },
+                {
+                    'title'         : 'MonsterCat Campaign:<br/>Robots',
+                    'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
+                    'thumbnail'     : ['images/small/monstercat.jpg','images/small/15.jpg', 'images/small/11.jpg', 'images/small/10.jpg'],
+                    'large'         : ['images/large/11.jpg','images/large/15.jpg', 'images/large/11.jpg', 'images/large/10.jpg'],
+                    'button_list'   :
+                    [
+                        { 'title':'Demo', 'url' : 'http://porfolio.bonchen.net/', 'new_window' : true },
+                        { 'title':'Download', 'url':'http://porfolio.bonchen.net/', 'new_window' : true}
+                    ],
+                    'tags'          : ['Advertising', 'Material Design']
+                },
+                {
+                    'title'         : 'First Story S13E15:<br/>Death of a Carver / Aboriginal Rights for Women',
+                    'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
+                    'thumbnail'     : ['images/small/carver.jpg','images/small/15.jpg', 'images/small/11.jpg', 'images/small/10.jpg'],
+                    'large'         : ['images/large/3.jpg','images/large/15.jpg', 'images/large/11.jpg', 'images/large/10.jpg'],
+                    'button_list'   :
+                    [
+                        { 'title':'Demo', 'url' : 'http://porfolio.bonchen.net/', 'new_window' : true },
+                        { 'title':'Download', 'url':'http://porfolio.bonchen.net/', 'new_window' : true}
+                    ],
+                    'tags'          : ['Compositions']
+                },
+                {
+                    'title'         : 'First Story S14E01:<br/>Broken Homes',
+                    'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
+                    'thumbnail'     : ['images/small/first.jpg','images/small/8.jpg', 'images/small/9.jpg', 'images/small/10.jpg'],
+                    'large'         : ['images/large/5.jpg','images/large/8.jpg', 'images/large/9.jpg', 'images/large/10.jpg'],
+                    'button_list'   :
+                    [
+                        { 'title':'Demo', 'url' : 'http://porfolio.bonchen.net/', 'new_window' : true },
+                        { 'title':'Download', 'url':'http://porfolio.bonchen.net/', 'new_window' : true}
+                    ],
+                    'tags'          : ['Compositions']
+                },
+                {
+                    'title'         : 'James Joyce Quarterly: "Digital Ulysses"',
+                    'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
+                    'thumbnail'     : ['images/small/jjq.jpg', 'images/small/13.jpg', 'images/small/14.jpg', 'images/small/15.jpg', 'images/small/16.jpg'],
+                    'large'         : ['images/large/6.jpg', 'images/large/13.jpg', 'images/large/14.jpg', 'images/large/15.jpg', 'images/large/16.jpg'],
+                    'button_list'   :
+                    [
+                        { 'title':'Demo', 'url' : 'http://porfolio.bonchen.net/', 'new_window' : true },
+                        { 'title':'Download', 'url':'http://porfolio.bonchen.net/', 'new_window' : true}
+                    ],
+                    'tags'          : ['Publications']
+                },
+				{
+                    'title'         : 'Sage Software',
+                    'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
+                    'thumbnail'     : ['images/small/sage.jpg', 'images/small/13.jpg', 'images/small/14.jpg', 'images/small/15.jpg', 'images/small/16.jpg'],
+                    'large'         : ['images/large/6.jpg', 'images/large/13.jpg', 'images/large/14.jpg', 'images/large/15.jpg', 'images/large/16.jpg'],
+                    'button_list'   :
+                    [
+                        { 'title':'Demo', 'url' : 'http://porfolio.bonchen.net/', 'new_window' : true },
+                        { 'title':'Download', 'url':'http://porfolio.bonchen.net/', 'new_window' : true}
+                    ],
+                    'tags'          : ['Documentation', 'Web Design']
+                },
+                {
+                    'title'         : 'Swiss chard pumpkin',
+                    'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
+                    'thumbnail'     : ['images/small/8.jpg', 'images/small/18.jpg', 'images/small/19.jpg', 'images/small/20.jpg'],
+                    'large'         : ['images/large/8.jpg', 'images/large/18.jpg', 'images/large/19.jpg', 'images/large/20.jpg'],
+                    'button_list'   :
+                    [
+                        { 'title':'Demo', 'url' : 'http://porfolio.bonchen.net/', 'new_window' : true },
+                        { 'title':'Download', 'url':'http://porfolio.bonchen.net/', 'new_window' : true}
+                    ],
+                    'tags'          : ['Publications']
+                },
+                {
+                    'title'         : 'Spinach winter purslane',
+                    'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
+                    'thumbnail'     : ['images/small/9.jpg','images/small/15.jpg', 'images/small/11.jpg', 'images/small/10.jpg'],
+                    'large'         : ['images/large/9.jpg','images/large/15.jpg', 'images/large/11.jpg', 'images/large/10.jpg'],
+                    'button_list'   :
+                    [
+                        { 'title':'Demo', 'url' : 'http://porfolio.bonchen.net/', 'new_window' : true },
+                        { 'title':'Download', 'url':'http://porfolio.bonchen.net/', 'new_window' : true}
+                    ],
+                    'tags'          : ['Publications']
+                }
+				
+
+            ]
+        });
+    });
+</script>
+    
+	<div style="height: 100px; width: 100%; color: #ffffff;"></div>
+	<div id="about">
+					<img class="metabuttons" src="images/twitter.png"> 
+        <img class="metabuttons" src="images/instagram.png">
+        <img class="metabuttons" src="images/linkedin.png"> 
+        <img class="metabuttons" src="images/soundcloud.png">
+	</div>
+
+
+</html>
