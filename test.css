@@ -1,0 +1,699 @@
+/*
+
+Cascading Style Sheet for www.zaqirvirani.com
+Written by Zaqir Virani
+
+*/
+/* BODY AND FONT ---------------------------------------------------------------------------------------------------------------------------- BODY and FONT */
+* {
+    margin:0;
+    padding:0;
+    max-width:100%;
+    max-height:100%;
+    -webkit-font-smoothing:antialiased
+}
+
+@font-face {
+    font-family:Raleway-ExtraLight;
+    src:url(fonts/Raleway-ExtraLight.otf)
+}
+
+@font-face {
+    font-family:LeagueGothic-Regular;
+    src:url(fonts/LeagueGothic-Regular.otf)
+}
+
+/* Scroll HEADER   -----------------------------------------------------------------------------------------------------------SCROLLING RESIZEABLE NAV */
+header {
+    width:100vw;
+    height:0;
+    overflow:hidden;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:999;
+    background-image:none;
+    -moz-background-size:cover;
+    -webkit-background-size:cover;
+    background-size:cover;
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-attachment:relative;
+    -webkit-transition:height .3s;
+    -moz-transition:height .3s;
+    -ms-transition:height .3s;
+    -o-transition:height .3s;
+    transition:height .3s
+}
+
+ul#nav {
+    list-style-type:none;
+    display:inline
+}
+
+li#nav {
+    float:right;
+    padding-right:1em;
+    font-family:Raleway-ExtraLight;
+    font-size:100%;
+    display:block;
+    color:#FFF;
+    opacity:.6
+}
+
+header h1#logo {
+    display:inline-block;
+    height:0;
+    line-height:20vh;
+    float:left;
+    font-family:"Oswald",sans-serif;
+    font-size:300%;
+    color:#828282;
+    font-weight:400;
+    -webkit-transition:all .3s;
+    -moz-transition:all .3s;
+    -ms-transition:all .3s;
+    -o-transition:all .3s;
+    transition:all .3s;
+    margin-top:2em
+}
+
+header nav {
+    display:inline-block;
+    float:right;
+    padding-right:1em
+}
+
+header nav a {
+    line-height:120px;
+    color:#fff;
+    font-weight:700;
+    font-size:100%;
+    padding-right:.5em;
+    -webkit-transition:all .3s;
+    -moz-transition:all .3s;
+    -ms-transition:all .3s;
+    -o-transition:all .3s;
+    transition:all .3s
+}
+
+header nav a:hover {
+    color:#fff
+}
+
+header.smaller {
+    height:4vh;
+    background:rgba(0,0,0,0.8)
+}
+
+header.smaller h1#logo {
+    width:50vw;
+    height:8vh;
+    line-height:8vh;
+    font-size:1.5vw
+}
+
+header.smaller nav a {
+    line-height:4vh;
+    font-weight:lighter;
+    font-size:1.5vw;
+    color:#B2B2B2
+}
+
+header.smaller nav a:hover {
+    color:#FFF;
+    opacity:none
+}
+
+@media all and (max-width: 60px) {
+header h1#logo {
+    display:block;
+    float:none;
+    margin:0 auto;
+    height:100px;
+    line-height:100px;
+    text-align:center
+}
+
+header nav {
+    display:block;
+    float:none;
+    height:50px;
+    text-align:center;
+    margin:0 auto
+}
+
+header nav a {
+    line-height:50px;
+    margin:0 10px
+}
+
+header.smaller {
+    height:75px
+}
+
+header.smaller h1#logo {
+    height:40px;
+    line-height:40px;
+    font-size:30px
+}
+
+header.smaller nav {
+    height:35px
+}
+
+header.smaller nav a {
+    line-height:35px
+}
+}
+
+/*  Main Page ------------------------------------------------------------------------------------------------------------------------------------Main Page------------------------------------------------  */
+h1 {
+    font-family:Raleway-ExtraLight;
+    color:#F5F5E3;
+    font-size:200%;
+	font-weight: lighter;
+    margin-top:5vh;
+    margin-left:1.5em;
+	opacity: 0.8;
+}
+
+h2 {
+    font-family:Raleway-ExtraLight;
+    color:#F5F5E3;
+    font-size:100%;
+    font-weight:lighter;
+    margin-left:6em
+}
+
+a:link {
+    color:#FFF;
+    text-decoration:none
+}
+
+a:visited {
+    color:#FFF
+}
+
+div#placeholding {
+    width:99.9vw;
+    height:75vh;
+    background-image:url(images/2.jpg);
+    -moz-background-size:cover;
+    -webkit-background-size:cover;
+    background-size:cover;
+    background-position:center bottom;
+    background-repeat:no-repeat;
+    background-attachment:relative;
+    overflow-y:hidden
+}
+
+div #buttonrow {
+    padding-right:3vw;
+    margin-top:-4em
+}
+
+img.landingbuttons {
+    width:6vw;
+    float:right;
+    padding-right:1em;
+    opacity:.5
+}
+
+img.landingbuttons:hover {
+    width:6vw;
+    float:right;
+    padding-right:1em;
+    color:#F5F5E3;
+    opacity:.9
+}
+
+div#navbar {
+    width:100vw;
+    height:25vh;
+    background-color:#FFFFFF;
+    -moz-background-size:cover;
+    -webkit-background-size:cover;
+    background-size:cover;
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-attachment:relative;
+    overflow:hidden;
+    text-align:center;
+    overflow-y:hidden;
+    opacity:.7
+}
+
+div#navbar p {
+    width:100vw;
+    font-size:3vw;
+    font-weight:900;
+    margin-top:6vh;
+    font-family:Raleway-ExtraLight;
+    color:#454537
+}
+
+/* Second Page ----------------------------------------------------------------------------------------------------------------------------------------Second Page-------------------------------------------- */
+div#tagline {
+    width:100vw;
+    height:40vh;
+    background-color:#FFFFFF;
+    opacity:.7;
+    -moz-background-size:cover;
+    -webkit-background-size:cover;
+    background-size:cover;
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-attachment:relative;
+    overflow:hidden;
+    overflow-y:hidden;
+    text-align:center
+}
+
+div#tagline p.title {
+    width:100vw;
+    font-size:3.5vmax;
+    text-align:center;
+    margin-top:8vh;
+    margin-bottom:1vh;
+    font-family:LeagueGothic-Regular;
+    color:#454537
+}
+
+div#tagline p.runner {
+    width:100vw;
+    font-size:2vmax;
+    text-align:center;
+    font-family:Raleway-ExtraLight;
+    font-weight:700;
+    color:#454537
+}
+
+
+/* Guitar Banner --------------------------------------------------------------------------------------------------------------------------------------Guitar Banner---------------------------------------------  */
+.guitar {
+    width:100vw;
+    height:60vh;
+    list-style:none;
+    text-align:center;
+    background-color:#FFF;
+    margin-left:0;
+    margin-right:0
+}
+
+.guitar li {
+    display:inline-block;
+    min-width:100vw;
+    size:cover;
+    margin:0;
+    padding:0;
+    text-align:left;
+    position:relative;
+    overflow:hidden
+}
+
+.guitar figure {
+    margin:0;
+    position:relative;
+    overflow:hidden
+}
+
+.guitar figure img {
+    width:100%;
+    display:block;
+    position:relative;
+    overflow:hidden
+}
+
+.guitar figcaption {
+    position:absolute;
+    font-family:Raleway-ExtraLight;
+    font-weight:700;
+    font-size:2.5vmax;
+    float:right;
+    top:0;
+    left:0;
+    padding-top:17vh;
+    padding-left:65vw;
+    background:rgba(0,0,0,0.0);
+    opacity:.7;
+    color:#F5F5E3
+}
+
+.guitar figcaption img {
+      width: 5vw;
+
+}
+.guitar figcaption h4 {
+    margin:0;
+    font-weight:lighter;
+    padding-bottom:1em;
+    font-family:Raleway-ExtraLight;
+    color:none
+}
+
+.guitar figcaption span:before {
+    text-decoration:none
+}
+
+.guitar figcaption a {
+    width:100%;
+    float:left;
+    font-family:Raleway-ExtraLight;
+    font-weight:lighter;
+    padding:5px 10px;
+    border-radius:2px;
+    background:transparent;
+    color:#fff
+}
+
+@media screen and (max-width: 0em) {
+.guitar {
+    padding:0
+}
+
+.guitar li {
+    width:100%;
+    min-width:100px
+}
+}
+
+.cs-style-3 li {
+    perspective:1700px;
+    perspective-origin:0 50%
+}
+
+.cs-style-3 figure {
+    transform-style:preserve-3d
+}
+
+.cs-style-3 figure > div {
+    overflow:hidden
+}
+
+.cs-style-3 figure img {
+    transition:transform 1s
+}
+
+.no-touch .cs-style-3 figure:hover img,.cs-style-3 figure.cs-hover img {
+/* Webkit for Chrome and Safari */
+    -webkit-transform:scale(1.2,1.2);
+    //thisistheenlargedsizescaleoftheimage-webkit-transition-duration:1800ms;
+    -webkit-transition-timing-function:ease-out;
+/* Webkit for Mozila Firefox */
+    -moz-transform:scale(1.2,1.2);
+    -moz-transition-duration:1800ms;
+    -moz-transition-timing-function:ease-out;
+/* Webkit for IE( Version: 11, 10 ) */
+    -ms-transform:scale(1.20,1.20);
+    -ms-transition-duration:1800ms;
+    -ms-transition-timing-function:ease-out
+}
+
+.cs-style-3 figcaption {
+    height:100%;
+    width:100%;
+    opacity:.9;
+    color:#F5F5E3
+}
+
+.no-touch .cs-style-3 figure:hover figcaption,.cs-style-3 figure.cs-hover figcaption {
+
+    opacity:1;
+    border-bottom-style:solid;
+    border-bottom-width:1px;
+    transform:rotateY(0deg);
+    transition:transform 0.7s,opacity .1s
+}
+
+
+/* Third page - Featured  work ----------------------------------------------------------------------------------------------------------------------Third page - Featured  work-----------------------------------*/
+
+div#featured {
+    width:100vw;
+    background-color:#FFFFF;
+    opacity:.9;
+    -moz-background-size:cover;
+    -webkit-background-size:cover;
+    background-size:cover;
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-attachment:relative;
+    overflow:hidden;
+    overflow-y:hidden;
+    text-align:center
+}
+
+p#featureleft {
+    width:30vw;
+    font-size:4vmax;
+    float:left;
+	padding-left: 3vw;
+    margin-top:3vh;
+    font-family:LeagueGothic-Regular;
+    color:#454537
+}
+
+p#featurebottom {
+    width:70vw;
+    font-size:4vmax;
+    text-align:center;
+    margin-left:16vw;
+    margin-top:14vh;
+    margin-bottom:10vh;
+    font-family:LeagueGothic-Regular;
+    color:#454537
+}
+
+p#featurenames {
+    width:70vw;
+	margin-top: 2vh;
+    float:right;
+    font-family:Raleway-ExtraLight;
+    color:#454537;
+    font-size:2vmax
+}
+
+a.folioselector {
+    font-family:LeagueGothic-Regular;
+    color:#454537;
+    font-size:4vmax
+}
+
+a.folioselector:hover {
+    font-size:4.5vmax;
+    border-bottom:solid;
+    border-bottom-width:1px
+}
+
+h3 {
+    font-family:Raleway-ExtraLight;
+    font-weight:lighter;
+    color:#F5F5E3;
+    font-size:2vw;
+    padding-top:1em;
+    padding-bottom:1em;
+    opacity:.8;
+    background-color:#000
+}
+
+.grid {
+    width:100vw;
+    list-style:none;
+    text-align:center;
+    background-color:#FFFFFF;
+    margin-top:10vh;
+    margin-left:0;
+    margin-right:0
+}
+
+.grid li#featured {
+    display:inline-block;
+    width:18vw;
+    margin:0;
+    text-align:left;
+    position:relative;
+    overflow:hidden;
+    border-radius:50%;
+    box-shadow:5px 5px 2px #888;
+    opacity:.9
+}
+
+.grid figure {
+    margin:0;
+    position:relative;
+    overflow:hidden
+}
+
+.grid figure img {
+    width:100%;
+    display:block;
+    position:relative;
+    overflow:hidden
+}
+
+.grid figcaption {
+    position:absolute;
+    font-family:Raleway-ExtraLight;
+    font-weight:lighter;
+    top:0;
+    left:0;
+    padding:2px;
+    background:rgba(0,0,0,0.6)
+}
+
+.grid figcaption h4 {
+    margin:0;
+    font-weight:lighter;
+    padding-bottom:1em;
+    font-family:Raleway-ExtraLight;
+    color:none
+}
+
+.grid figcaption span:before {
+    color:#000
+}
+
+.grid figcaption a {
+    text-align:center;
+    font-family:Raleway-ExtraLight;
+    font-weight:lighter;
+    padding:5px 10px;
+    border-radius:2px;
+    display:inline-block;
+    background:#393;
+    color:#fff
+}
+
+@media screen and (max-width: 0em) {
+.grid {
+    padding:0
+}
+
+.grid li {
+    width:100%;
+    min-width:100px
+}
+}
+
+.cs-style-4 li {
+    perspective:1700px;
+    perspective-origin:0 50%
+}
+
+.cs-style-4 figure {
+    transform-style:preserve-3d
+}
+
+.cs-style-4 figure > div {
+    overflow:hidden
+}
+
+.cs-style-4 figure img {
+    transition:transform 1s
+}
+
+.no-touch .cs-style-4 figure:hover img,.cs-style-4 figure.cs-hover img {
+/* Webkit for Chrome and Safari */
+    -webkit-transform:scale(1.2,1.2);
+    //thisistheenlargedsizescaleoftheimage-webkit-transition-duration:1800ms;
+    -webkit-transition-timing-function:ease-out;
+/* Webkit for Mozila Firefox */
+    -moz-transform:scale(1.2,1.2);
+    -moz-transition-duration:1800ms;
+    -moz-transition-timing-function:ease-out;
+/* Webkit for IE( Version: 11, 10 ) */
+    -ms-transform:scale(1.20,1.20);
+    -ms-transition-duration:1800ms;
+    -ms-transition-timing-function:ease-out
+}
+
+.cs-style-4 figcaption {
+    height:100%;
+    width:100%;
+    opacity:0;
+    color:#FFF;
+    font-weight:lighter;
+    backface-visibility:hidden
+}
+
+.cs-style-4 figcaption a {
+    position:absolute;
+    bottom:20px;
+    right:20px
+}
+
+
+
+/* About ----------------------------------------------------------------------------------------------*/
+
+div#about {
+
+    width:99.9vw;
+    height:60vh;
+    background-image:url(images/about.jpg);
+    -moz-background-size:cover;
+    -webkit-background-size:cover;
+    background-size:cover;
+    background-position:center top -20vh;
+    background-repeat:no-repeat;
+    background-attachment:relative;
+    overflow-y:hidden
+}
+
+div#about p {
+
+font-family:LeagueGothic-Regular;
+color: #454537;
+font-size: 4vmax;
+float: left;
+padding-left: 10vw;
+
+}
+
+/* Footer ----------------------------------------------------------------------------------------------------------------------------------------------- Footer */
+div#footer {
+    width:100vw;
+    background-color:#2B2B2B;
+    font-family:Raleway-ExtraLight;
+    font-weight:lighter;
+    color:#FFF;
+    position:absolute;
+    z-index:1
+}
+
+div#footer span {
+    font-size:70%
+}
+
+h5 {
+    color:#FFF;
+    font-family:LeagueGothic-Regular;
+    font-weight:lighter;
+    text-align:center;
+	font-size: 2.5vmax;
+}
+
+h6 {
+    color:#FFF;
+    font-family:Raleway-ExtraLight;
+    font-weight:lighter;
+    text-align:center;
+	padding-top: 1vh;
+	font-size: 1.5vmax;
+}
+
+img.metabuttons {
+    padding-bottom: 1vh;
+    padding-left:2em;
+    width:2.5vmax;
+}
+
+form {
+text-align: center;
+padding-top: 2vh;
+padding-bottom: 2vh;
+
+}
+
+
