@@ -48,11 +48,20 @@ function init() {
             });
         });
     </script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+<script>
+$(window).load(function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut("slow");;
+	});
+	</script>
 	    <link rel="stylesheet" type="text/css" href="css/demo.css" />
 	<link rel="stylesheet" type="text/css" href="css/elastic_grid.min.css" />
 </head>
 
 <body class="no-touch">
+<div class="se-pre-con"></div>
     <!--<header>
         <div class="container clearfix">
             <h1 id="logo"></h1>
