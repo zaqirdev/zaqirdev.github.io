@@ -18,44 +18,7 @@
     <link href="test.css" rel="stylesheet" type="text/css">
 	<link rel="shortcut icon" href="favicon.ico">
     <style type="text/css"></style>
-    <script src='js/scroll.js'></script>
-    <script src="js/classie.js"></script>
-    <script>
-function init() {
-        window.addEventListener('scroll', function(e){
-            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-                shrinkOn = 300,
-                header = document.querySelector("header");
-            if (distanceY > shrinkOn) {
-                classie.add(header,"smaller");
-            } else {
-                if (classie.has(header,"smaller")) {
-                    classie.remove(header,"smaller");
-                }
-            }
-        });
-    }
-    window.onload = init();
-    </script>
-    <script>
-    jQuery(document).ready(function($) {
-
-            $(".scroll").click(function(event) {
-                event.preventDefault();
-                $('html,body').animate({
-                    scrollTop: $(this.hash).offset().top
-                }, 1400);
-            });
-        });
-    </script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
-<script>
-$(window).load(function() {
-		// Animate loader off screen
-		$(".se-pre-con").fadeOut("slow");;
-	});
-	</script>
+    
 	    <link rel="stylesheet" type="text/css" href="css/demo.css" />
 	<link rel="stylesheet" type="text/css" href="css/elastic_grid.min.css" />
 </head>
@@ -335,6 +298,44 @@ $(window).load(function() {
         });
     });
 </script>
+<script src='js/scroll.js'></script>
+    <script src="js/classie.js"></script>
+    <script>
+function init() {
+        window.addEventListener('scroll', function(e){
+            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                shrinkOn = 300,
+                header = document.querySelector("header");
+            if (distanceY > shrinkOn) {
+                classie.add(header,"smaller");
+            } else {
+                if (classie.has(header,"smaller")) {
+                    classie.remove(header,"smaller");
+                }
+            }
+        });
+    }
+    window.onload = init();
+    </script>
+    <script>
+    jQuery(document).ready(function($) {
+
+            $(".scroll").click(function(event) {
+                event.preventDefault();
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 1400);
+            });
+        });
+    </script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+<script>
+$(window).load(function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut("slow");;
+	});
+	</script>
     
 	<div style="height: 100px; width: 100%; color: #ffffff;"></div>
 	<div id="about">
