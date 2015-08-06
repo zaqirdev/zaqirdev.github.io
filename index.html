@@ -18,7 +18,44 @@
     <link href="test.css" rel="stylesheet" type="text/css">
 	<link rel="shortcut icon" href="favicon.ico">
     <style type="text/css"></style>
-    
+    <script src='js/scroll.js'></script>
+    <script src="js/classie.js"></script>
+    <script>
+function init() {
+        window.addEventListener('scroll', function(e){
+            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                shrinkOn = 300,
+                header = document.querySelector("header");
+            if (distanceY > shrinkOn) {
+                classie.add(header,"smaller");
+            } else {
+                if (classie.has(header,"smaller")) {
+                    classie.remove(header,"smaller");
+                }
+            }
+        });
+    }
+    window.onload = init();
+    </script>
+    <script>
+    jQuery(document).ready(function($) {
+
+            $(".scroll").click(function(event) {
+                event.preventDefault();
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 1400);
+            });
+        });
+    </script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+<script>
+$(window).load(function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut("slow");;
+	});
+	</script>
 	    <link rel="stylesheet" type="text/css" href="css/demo.css" />
 	<link rel="stylesheet" type="text/css" href="css/elastic_grid.min.css" />
 </head>
@@ -81,8 +118,8 @@
 <script src="js/classie.js"></script>
 <!--- uncompress-->
 <!-- <script type="text/javascript" src="js/jquery.elastislide.js"></script>
-<script type="text/javascript" src="js/jquery.hoverdir.js"></script>
-<script type="text/javascript" src="js/elastic_grid.js"></script> -->
+<script type="text/javascript" src="js/jquery.hoverdir.js"></script>-->
+<script type="text/javascript" src="js/elastic_grid.js"></script>
 
 <!-- compress version-->
 <script type="text/javascript" src="js/elastic_grid.min.js"></script>
@@ -96,7 +133,7 @@
             'hoverDelay': 0,
             'hoverInverse': false,
             'expandingSpeed': 800,
-            'expandingHeight': 400,
+            'expandingHeight': 800,
             'items' :
             [
                 {
@@ -104,7 +141,7 @@
                     'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
 					<!-- the first thumbnail shows in the gallery, the next four also run as a slider in the expanded view -->
                     'thumbnail'     : ['images/small/resonator.jpg', 'images/small/2.jpg', 'images/small/3.jpg', 'images/small/10.jpg', 'images/small/11.jpg'],
-                    'large'         : ['images/large/1.jpg', 'images/large/2.jpg', 'images/large/3.jpg', 'images/large/10.jpg', 'images/large/11.jpg'],
+                    'large'         : ['images/large/resonator.jpg', 'images/large/2.jpg', 'images/large/3.jpg', 'images/large/10.jpg', 'images/large/11.jpg'],
                     'button_list'   :
                     [
                         { 'title':'Visit', 'url' : 'http://resonatormagazine.com/', 'new_window' : true },
@@ -298,44 +335,6 @@
         });
     });
 </script>
-<script src='js/scroll.js'></script>
-    <script src="js/classie.js"></script>
-    <script>
-function init() {
-        window.addEventListener('scroll', function(e){
-            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-                shrinkOn = 300,
-                header = document.querySelector("header");
-            if (distanceY > shrinkOn) {
-                classie.add(header,"smaller");
-            } else {
-                if (classie.has(header,"smaller")) {
-                    classie.remove(header,"smaller");
-                }
-            }
-        });
-    }
-    window.onload = init();
-    </script>
-    <script>
-    jQuery(document).ready(function($) {
-
-            $(".scroll").click(function(event) {
-                event.preventDefault();
-                $('html,body').animate({
-                    scrollTop: $(this.hash).offset().top
-                }, 1400);
-            });
-        });
-    </script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
-<script>
-$(window).load(function() {
-		// Animate loader off screen
-		$(".se-pre-con").fadeOut("slow");;
-	});
-	</script>
     
 	<div style="height: 100px; width: 100%; color: #ffffff;"></div>
 	<div id="about">

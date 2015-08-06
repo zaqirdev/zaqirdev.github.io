@@ -178,7 +178,7 @@ $(function() {
             hoverDirection: true,
             hoverDelay: 0,
             hoverInverse: false,
-            expandingHeight: 500,
+            expandingHeight: 800,
             expandingSpeed: 300,
             callback: function() {}
         }, config);
