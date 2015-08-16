@@ -23,7 +23,7 @@ Written by Zaqir Virani
     src:url(fonts/LeagueGothic-Regular.otf)
 }
 
-/* Scroll HEADER   -----------------------------------------------------------------------------------------------------------SCROLLING RESIZEABLE NAV */
+/* Scroll HEADER   -----------------------------------------------------------------------------------------------------------SCROLLING RESIZEABLE NAV
 header {
     width:100vw;
     height:0;
@@ -309,6 +309,7 @@ div#about {
 
     width:99.9vw;
     height:60vh;
+	position: relative;
     background-image:url(images/about.jpg);
     -moz-background-size:cover;
     -webkit-background-size:cover;
@@ -323,9 +324,9 @@ div#about p {
 
 font-family:LeagueGothic-Regular;
 color: #454537;
-font-size: 4vmax;
+font-size: 2vmax;
 float: left;
-padding-left: 10vw;
+padding-left: 1vw;
 
 }
 
@@ -362,9 +363,9 @@ h6 {
 }
 
 img.metabuttons {
-    padding-bottom: 1vh;
-    padding-left:2em;
-    width:2.5vmax;
+	float: right;
+	padding-right: 1vw;
+    width:5vmax;
 }
 
 form {
