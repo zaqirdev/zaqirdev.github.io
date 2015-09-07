@@ -210,7 +210,7 @@ div#placeholding {
 
 div #buttonrow {
     padding-right:3vw;
-    margin-top:-4em
+    margin-top:-5em
 }
 
 .no-js #loader { display: none;  }
@@ -226,14 +226,16 @@ div #buttonrow {
 }
 
 img.landingbuttons {
-    width:6vw;
+    width:5%;
+	min-width: 2em;
     float:right;
     padding-right:1em;
     opacity:.5
 }
 
 img.landingbuttons:hover {
-    width:6vw;
+    width:5%;
+	min-width: 2em;
     float:right;
     padding-right:1em;
     color:#F5F5E3;
